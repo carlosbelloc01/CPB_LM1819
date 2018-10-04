@@ -6,12 +6,30 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<!--body style="background-image: url('patata.jpg'); 
+        background-repeat: repeat-y; 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover"-->
+    
+<!--body style="background:url('patata.jpg') no-repeat center center fixed"-->  
+<!--está reducido a una linea-->
 <body>
     <!--Enlaces-->
     <a href="http://www.google.es" target="_blank" hreflang="es" rel="next" type="text/html" >Google</a>
     <a href="nueva .html" >Ir a Nueva</a>
     <a href="carpeta/datos.html" >Ir a datos</a>
-    <a href="nueva .html#final">Ir al final de nueva</a>
+    <a href="nueva .html#final" target="_blank">Ir al final de nueva</a>
 
+    <!--Imagenes-->
+    <img src="patata.jpg" usemap="#formas" alt="Esquema de instrucciones de ISO" style="width: 250px" height="250px">
+
+    <map name="formas" id="formas">
+        <area shape="rect" coords="10,40,920,518" href="www.google.es" target="_blank">
+        <area shape="circle" coords="1,1,500,500" href="www.google.es" target="_blank">
+        <area shape="poly" coords="60,400,100,87,208,7,380,120,30,98" href="www.google.es"> 
+        <!--coordenadas de los pixeles para crear figuras-->
+     </map>
 </body>
 </html>
