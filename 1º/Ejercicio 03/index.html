@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tablas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <table style="border: 1px solid green; border-collapse: collapse; margin 60px; background: red" rules="groups">
+        <caption>Dias de la semana</caption>
+        <thead>
+         <tr style="border: 2px solid greenyellow">
+            <th style="padding: 55px">Lunes</th>
+            <th>Martes</th>
+            <td>Miercoles</td>
+        </tr>
+        </thead>
+    <tbody>
+       <tr>
+            <td rowspan="2" style="border: 1px solid black">1</td>
+            <td colspan="2" style="border: 1px solid black">2</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><table style="border: 1px solid green; border-collapse: collapse" rules="groups"></table></table></td>   
+            <!--tabla no funciona dentro de tabla-->
+        </tr>
+    </table>
+    </tbody>
+</body>
+</html>
