@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <form action="gestiondatos.jsp" method="GET">
+            <fieldset>
+                <legend>Datos Usuario</legend>
+        <label for="nombre">Nombre de Usuario:</label> <input type="text" value="" name="nombre" 
+               id="nombre" placeholder="Nombre de usuario" size="100" maxlength="20" pattern="[A-Z]{5}[0-9]{3}"/>
+        <br/>
+        <input type="password" name="pass"/>
+
+        <br>
+      
+        <label for="pregunta">Alumno?</label>
+        <input type="radio" name="pregunta" id="pregunta" value="S" checket="checket"/>Si
+        <input type="radio" name="pregunta" id="pregunta" value="N"/>No
+
+        <br/>
+        Aficiones
+        <input type="checkbox"  name="futbol" value="f"/>Futbol
+       
+        <input type="checkbox"  name="cine" value="c"/>Cine
+        <br/>
+        <label for="Provincias">Provincias</label>
+        <select name="provincias" id="provincias">
+            <optgroup label="Unos">
+                <option value="Se">Sevilla</optgroup>
+            </optgroup>
+            <optgroup label="Dos">
+                <option value="Ca">Cadiz</option>
+                <option value="Hu">Huelva</option>
+
+            </optgroup>
+            <option value="Se">Sevilla</option>
+            <option value="Ca">Cadiz</option>
+            <option value="Hu">Huelva</option>
+        </select>
+        <br/>
+        <input type="file" name="archivo"/>
+
+        <br/>
+        <textarea name="descripcion" rows="10" cols="50" maxlength="50">
+        </textarea>
+
+        <br/>
+        
+        <br/>
+        <input type="button" name="boton" value="Pulsar"/>
+        <br/>
+
+        <input type="reset" value="borrar"/>
+        
+        <br/>
+        <input type="submit" value="enviar"/>
+    </fieldset>
+
+
+
+
+
+    </form>
+
+    <form>
+            <input type="number" min="1" max="10" required="required"/>
+            <input type="email" readonly/>
+            <input type="submit"/>
+            <input type="url"/>
+            <input type="date"/>
+            <input type="time"/>
+            <input type="datetime-local"/>
+            <input type="month"/>
+            <input type="search"/>
+            <input type="tel"/>
+            <input type="range" min="1" max="100" step="2"/>
+            <input type="color"/>
+
+
+
+    </form>
+
+
+</body>
+</html>
