@@ -49,13 +49,15 @@
     float: left;
     border-right: solid rgb(111, 142, 157) 1px;
     padding: 2px;
+    
 }
 
 #cuerpo {
-    background-color: rgb(255, 248, 192);
+    background-color: rgb(247, 228, 89);
     height: fit-content;
     width: 50%;
     align-items: center;
+    
 }
 
 #seccion {
@@ -79,7 +81,7 @@
 
 #lateral {
     background-color: rgb(196, 186, 207);
-    height: 575px;
+    height: 565px;
     width: 220px;
     float: left;
 }
