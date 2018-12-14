@@ -1,0 +1,122 @@
+.lazul {
+    color:rgb(111, 142, 157);
+}
+
+.lmarron {
+    color:rgb(208, 130, 87);
+}
+
+.azul {
+    color: dodgerblue;
+}
+
+#contenedor{
+    margin: 15px;
+}
+
+#cabecera {
+    background-color:rgb(171, 234, 171) ;
+    width: 50%;
+    height: fit-content;
+}
+
+#cabecera img{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+#cabecera h2{
+    color: brown;
+    padding-top: 20px;
+}
+
+#cabecera h4{
+    color: rgb(110, 210, 110);
+    margin-bottom: 15px;
+}
+
+#nav {
+    background-color:rgb(166, 206, 229);
+    height: 22px;
+    width: 50%;
+    padding-left: 0px;
+}
+
+#nav ul li {
+    display: block;
+    float: left;
+    border-right: solid rgb(111, 142, 157) 1px;
+    padding: 2px;
+}
+
+#cuerpo {
+    background-color: rgb(255, 248, 192);
+    height: fit-content;
+    width: 50%;
+    align-items: center;
+}
+
+#seccion {
+    background-color: rgb(255, 186, 144);
+    height: fit-content;
+    width: 90%;
+    margin: 30px;
+}
+
+#seccion h5 {
+    border: solid rgb(208, 130, 87) 1px;
+    padding: 10px;
+}
+
+#medio {
+    background-color: rgb(208, 130, 87);
+    height: 100px;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#lateral {
+    background-color: rgb(196, 186, 207);
+    height: 575px;
+    width: 220px;
+    float: left;
+}
+
+#lateral header {
+    border: solid rgb(164, 155, 175) 1px;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+}
+
+#lateral h4 {
+    background-color: rgb(186, 176, 197);
+    color: rgb(121, 116, 150);
+    border: solid rgb(164, 155, 175) 1px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+    margin: -1px;
+}
+
+#lateral header img {
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+#lateral section {
+    border: solid rgb(164, 155, 175) 1px;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+}
+
+#lateral section img {
+    padding-top: 2px;
+}
+
+#lateral footer {
+    border: solid rgb(164, 155, 175) 1px;
+    border-radius: 5px 5px 5px 5px;
+}
