@@ -212,6 +212,16 @@ return
 
 
 
+corrección
+
+for $libros in //bookstore/book
+let $cuantos := count($libros/author)
+return 
+		<libro>
+			<titulo>{$libros/title/text()}</titulo>
+			<autores>{$cuantos}</autores>
+		</libros>
+
 
 Mostrar cada uno de los precios de los libros, y al final una nueva etiqueta con la suma de los precios (funcion sum())
 
@@ -219,3 +229,96 @@ Mostrar cada uno de los precios de los libros, y al final una nueva etiqueta con
 for $libro in //bookstore/book
 where $libro/price 
 return $libro/price
+
+
+correccion
+
+let $precios := //bookstore/book/price,
+$sumaprecios := sum($precios)
+return	
+	<listaPrecios>
+		{$precios}
+		<precioTotal>{$sumaprecios}</precioTotal>
+	</listaPrecios>
+
+
+
+
+
+Mostrar en la misma etiqueta el titulo y entre parentesis el numero de autores que tiene ese titulo.
+
+
+for $libros in //bookstore/book
+let $titulo := $libros/title/text(),
+$autores := count($libros/author)
+return
+	<libro>
+		{$titulo} ({$autores})
+	</libro>
+
+
+
+
+Mostrar los libros escritos en años que terminen en 3
+
+
+for $libros in //bookstore/book
+where ends-with($libros/year, "3")
+return $libros
+
+sin where
+
+for $libros in //bookstore/book[ends-with(year, "3")]
+return $libros 
+
+
+
+
+Mostrar los libros cuya categoria empieza por C y que tengan una P mayus o minus en el titulo.
+
+
+for $libros in //bookstore/book
+where starts-with($libros/@category, "C")
+and contains(lower-case($libros/title), "p")
+return $libros
+
+
+
+
+
+Mostrar el titulo y el numero de caracteres que tiene cada titulo. Metodo string-length
+
+
+for $libros in //bookstore/book/title/text()
+return	
+	<titulo>
+		{$libros} ({string-length($libros)})
+	</titulo>
+
+
+
+
+
+
+Pregunta 3 XQUERY
+
+Mostrar todos los años en los que se ha publicado un libro eliminando los repetidos (distinct-values)
+
+for $libros in //bookstore/book/year
+
+return
+	<año>($libros)</año>
+
+
+
+
+
+Mostrar los títulos en una tabla html
+
+
+for $libros in //bookstore/book/title
+
+return
+	<table><tr>($libros)</tr></table>
+
+
