@@ -35,8 +35,41 @@ else (array_rand($numeros=5)){
 }
 
 
+correccion
+
+<style>
+    .rojo{
+        color: red;
+    }
+    .verde{
+        color: green;
+    }
+    .azul{
+        color: blue;
+    }
+</style>
+
+<?php
+
+$aleatorio = rand(1,10);
+if ($aleatorio < 5) {
+    echo "<p>El valor $aleatorio es menor que 5</p>";
+} else if ($aleatorio > 5) {
+    echo "<p class='rojo'> El valor $aleatorio es menor que 5</p>";
+    else if ($aleatorio > 5) {
+        echo "<p class='azul'> El valor $aleatorio es mayor que 5</p>";
+        else {
+            echo "<p class='verde'> El valor $aleatorio es 5</p>";
+    }
+}
+
+?>
+
 
 
 ?>
+
+
+
 </body>
 </html>
