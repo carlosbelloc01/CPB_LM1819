@@ -8,7 +8,7 @@
    
     <head><title>Tablas de multiplicar</title></head>
 <body>
-
+1.............
 <?php
 $ciclo1=1;
 while($ciclo1<=10)
@@ -26,7 +26,7 @@ $ciclo1++;
 }
 ?>
 
-
+2..............
 <?php
 
 $fecha1=mktime(0,0,0,"1","2","2019");
@@ -40,7 +40,7 @@ echo $dias;
 
 ?>
 
-
+3..............
 <?php 
 $entrada=array(12,2,32,10,11,58,60,7,48,79);  
 $mayor=$entrada[0];  
