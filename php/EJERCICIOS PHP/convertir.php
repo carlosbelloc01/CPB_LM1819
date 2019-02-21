@@ -1,7 +1,7 @@
 <?php
 
 $pies = trim(htmlspecialchars($_REQUEST["pies"], EMT_QUOTES, "UTF-8"));
-$ulgadas = trim(htmlspecialchars($_REQUEST["pulgadas"], EMT_QUOTES, "UTF-8"));
+$pulgadas = trim(htmlspecialchars($_REQUEST["pulgadas"], EMT_QUOTES, "UTF-8"));
 
 $piesok = false;
 $pulgadasok = false;
